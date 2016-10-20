@@ -1,0 +1,551 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D721F99C1DB93C0C000C13A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D721F99B1DB93C0C000C13A4 /* AppDelegate.swift */; };
+		D721F99E1DB93C0C000C13A4 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = D721F99D1DB93C0C000C13A4 /* GameScene.sks */; };
+		D721F9A01DB93C0C000C13A4 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = D721F99F1DB93C0C000C13A4 /* Actions.sks */; };
+		D721F9A21DB93C0C000C13A4 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = D721F9A11DB93C0C000C13A4 /* GameScene.swift */; };
+		D721F9A41DB93C0C000C13A4 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D721F9A31DB93C0C000C13A4 /* GameViewController.swift */; };
+		D721F9A71DB93C0C000C13A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D721F9A51DB93C0C000C13A4 /* Main.storyboard */; };
+		D721F9A91DB93C0C000C13A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D721F9A81DB93C0C000C13A4 /* Assets.xcassets */; };
+		D721F9AC1DB93C0C000C13A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D721F9AA1DB93C0C000C13A4 /* LaunchScreen.storyboard */; };
+		D721F9B71DB93C0C000C13A4 /* ZombieChaChaChaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D721F9B61DB93C0C000C13A4 /* ZombieChaChaChaTests.swift */; };
+		D721F9C21DB93C0C000C13A4 /* ZombieChaChaChaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D721F9C11DB93C0C000C13A4 /* ZombieChaChaChaUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D721F9B31DB93C0C000C13A4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D721F9901DB93C0C000C13A4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D721F9971DB93C0C000C13A4;
+			remoteInfo = ZombieChaChaCha;
+		};
+		D721F9BE1DB93C0C000C13A4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D721F9901DB93C0C000C13A4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D721F9971DB93C0C000C13A4;
+			remoteInfo = ZombieChaChaCha;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D721F9981DB93C0C000C13A4 /* ZombieChaChaCha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZombieChaChaCha.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D721F99B1DB93C0C000C13A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D721F99D1DB93C0C000C13A4 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		D721F99F1DB93C0C000C13A4 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
+		D721F9A11DB93C0C000C13A4 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		D721F9A31DB93C0C000C13A4 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		D721F9A61DB93C0C000C13A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D721F9A81DB93C0C000C13A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D721F9AB1DB93C0C000C13A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D721F9AD1DB93C0C000C13A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D721F9B21DB93C0C000C13A4 /* ZombieChaChaChaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZombieChaChaChaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D721F9B61DB93C0C000C13A4 /* ZombieChaChaChaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZombieChaChaChaTests.swift; sourceTree = "<group>"; };
+		D721F9B81DB93C0C000C13A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D721F9BD1DB93C0C000C13A4 /* ZombieChaChaChaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZombieChaChaChaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D721F9C11DB93C0C000C13A4 /* ZombieChaChaChaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZombieChaChaChaUITests.swift; sourceTree = "<group>"; };
+		D721F9C31DB93C0C000C13A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D721F9951DB93C0C000C13A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D721F9AF1DB93C0C000C13A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D721F9BA1DB93C0C000C13A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D721F98F1DB93C0C000C13A4 = {
+			isa = PBXGroup;
+			children = (
+				D721F99A1DB93C0C000C13A4 /* ZombieChaChaCha */,
+				D721F9B51DB93C0C000C13A4 /* ZombieChaChaChaTests */,
+				D721F9C01DB93C0C000C13A4 /* ZombieChaChaChaUITests */,
+				D721F9991DB93C0C000C13A4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D721F9991DB93C0C000C13A4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D721F9981DB93C0C000C13A4 /* ZombieChaChaCha.app */,
+				D721F9B21DB93C0C000C13A4 /* ZombieChaChaChaTests.xctest */,
+				D721F9BD1DB93C0C000C13A4 /* ZombieChaChaChaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D721F99A1DB93C0C000C13A4 /* ZombieChaChaCha */ = {
+			isa = PBXGroup;
+			children = (
+				D721F99B1DB93C0C000C13A4 /* AppDelegate.swift */,
+				D721F99D1DB93C0C000C13A4 /* GameScene.sks */,
+				D721F99F1DB93C0C000C13A4 /* Actions.sks */,
+				D721F9A11DB93C0C000C13A4 /* GameScene.swift */,
+				D721F9A31DB93C0C000C13A4 /* GameViewController.swift */,
+				D721F9A51DB93C0C000C13A4 /* Main.storyboard */,
+				D721F9A81DB93C0C000C13A4 /* Assets.xcassets */,
+				D721F9AA1DB93C0C000C13A4 /* LaunchScreen.storyboard */,
+				D721F9AD1DB93C0C000C13A4 /* Info.plist */,
+			);
+			path = ZombieChaChaCha;
+			sourceTree = "<group>";
+		};
+		D721F9B51DB93C0C000C13A4 /* ZombieChaChaChaTests */ = {
+			isa = PBXGroup;
+			children = (
+				D721F9B61DB93C0C000C13A4 /* ZombieChaChaChaTests.swift */,
+				D721F9B81DB93C0C000C13A4 /* Info.plist */,
+			);
+			path = ZombieChaChaChaTests;
+			sourceTree = "<group>";
+		};
+		D721F9C01DB93C0C000C13A4 /* ZombieChaChaChaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D721F9C11DB93C0C000C13A4 /* ZombieChaChaChaUITests.swift */,
+				D721F9C31DB93C0C000C13A4 /* Info.plist */,
+			);
+			path = ZombieChaChaChaUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D721F9971DB93C0C000C13A4 /* ZombieChaChaCha */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D721F9C61DB93C0C000C13A4 /* Build configuration list for PBXNativeTarget "ZombieChaChaCha" */;
+			buildPhases = (
+				D721F9941DB93C0C000C13A4 /* Sources */,
+				D721F9951DB93C0C000C13A4 /* Frameworks */,
+				D721F9961DB93C0C000C13A4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZombieChaChaCha;
+			productName = ZombieChaChaCha;
+			productReference = D721F9981DB93C0C000C13A4 /* ZombieChaChaCha.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D721F9B11DB93C0C000C13A4 /* ZombieChaChaChaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D721F9C91DB93C0C000C13A4 /* Build configuration list for PBXNativeTarget "ZombieChaChaChaTests" */;
+			buildPhases = (
+				D721F9AE1DB93C0C000C13A4 /* Sources */,
+				D721F9AF1DB93C0C000C13A4 /* Frameworks */,
+				D721F9B01DB93C0C000C13A4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D721F9B41DB93C0C000C13A4 /* PBXTargetDependency */,
+			);
+			name = ZombieChaChaChaTests;
+			productName = ZombieChaChaChaTests;
+			productReference = D721F9B21DB93C0C000C13A4 /* ZombieChaChaChaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D721F9BC1DB93C0C000C13A4 /* ZombieChaChaChaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D721F9CC1DB93C0C000C13A4 /* Build configuration list for PBXNativeTarget "ZombieChaChaChaUITests" */;
+			buildPhases = (
+				D721F9B91DB93C0C000C13A4 /* Sources */,
+				D721F9BA1DB93C0C000C13A4 /* Frameworks */,
+				D721F9BB1DB93C0C000C13A4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D721F9BF1DB93C0C000C13A4 /* PBXTargetDependency */,
+			);
+			name = ZombieChaChaChaUITests;
+			productName = ZombieChaChaChaUITests;
+			productReference = D721F9BD1DB93C0C000C13A4 /* ZombieChaChaChaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D721F9901DB93C0C000C13A4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = okayestprogrammer;
+				TargetAttributes = {
+					D721F9971DB93C0C000C13A4 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 88UZ84VZEF;
+						ProvisioningStyle = Automatic;
+					};
+					D721F9B11DB93C0C000C13A4 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 88UZ84VZEF;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D721F9971DB93C0C000C13A4;
+					};
+					D721F9BC1DB93C0C000C13A4 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 88UZ84VZEF;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D721F9971DB93C0C000C13A4;
+					};
+				};
+			};
+			buildConfigurationList = D721F9931DB93C0C000C13A4 /* Build configuration list for PBXProject "ZombieChaChaCha" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D721F98F1DB93C0C000C13A4;
+			productRefGroup = D721F9991DB93C0C000C13A4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D721F9971DB93C0C000C13A4 /* ZombieChaChaCha */,
+				D721F9B11DB93C0C000C13A4 /* ZombieChaChaChaTests */,
+				D721F9BC1DB93C0C000C13A4 /* ZombieChaChaChaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D721F9961DB93C0C000C13A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D721F9A71DB93C0C000C13A4 /* Main.storyboard in Resources */,
+				D721F99E1DB93C0C000C13A4 /* GameScene.sks in Resources */,
+				D721F9A91DB93C0C000C13A4 /* Assets.xcassets in Resources */,
+				D721F9AC1DB93C0C000C13A4 /* LaunchScreen.storyboard in Resources */,
+				D721F9A01DB93C0C000C13A4 /* Actions.sks in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D721F9B01DB93C0C000C13A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D721F9BB1DB93C0C000C13A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D721F9941DB93C0C000C13A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D721F9A21DB93C0C000C13A4 /* GameScene.swift in Sources */,
+				D721F9A41DB93C0C000C13A4 /* GameViewController.swift in Sources */,
+				D721F99C1DB93C0C000C13A4 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D721F9AE1DB93C0C000C13A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D721F9B71DB93C0C000C13A4 /* ZombieChaChaChaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D721F9B91DB93C0C000C13A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D721F9C21DB93C0C000C13A4 /* ZombieChaChaChaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D721F9B41DB93C0C000C13A4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D721F9971DB93C0C000C13A4 /* ZombieChaChaCha */;
+			targetProxy = D721F9B31DB93C0C000C13A4 /* PBXContainerItemProxy */;
+		};
+		D721F9BF1DB93C0C000C13A4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D721F9971DB93C0C000C13A4 /* ZombieChaChaCha */;
+			targetProxy = D721F9BE1DB93C0C000C13A4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D721F9A51DB93C0C000C13A4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D721F9A61DB93C0C000C13A4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D721F9AA1DB93C0C000C13A4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D721F9AB1DB93C0C000C13A4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D721F9C41DB93C0C000C13A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D721F9C51DB93C0C000C13A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D721F9C71DB93C0C000C13A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 88UZ84VZEF;
+				INFOPLIST_FILE = ZombieChaChaCha/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.okayestprogrammer.ZombieChaChaCha;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		D721F9C81DB93C0C000C13A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 88UZ84VZEF;
+				INFOPLIST_FILE = ZombieChaChaCha/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.okayestprogrammer.ZombieChaChaCha;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		D721F9CA1DB93C0C000C13A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 88UZ84VZEF;
+				INFOPLIST_FILE = ZombieChaChaChaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.okayestprogrammer.ZombieChaChaChaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZombieChaChaCha.app/ZombieChaChaCha";
+			};
+			name = Debug;
+		};
+		D721F9CB1DB93C0C000C13A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 88UZ84VZEF;
+				INFOPLIST_FILE = ZombieChaChaChaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.okayestprogrammer.ZombieChaChaChaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZombieChaChaCha.app/ZombieChaChaCha";
+			};
+			name = Release;
+		};
+		D721F9CD1DB93C0C000C13A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 88UZ84VZEF;
+				INFOPLIST_FILE = ZombieChaChaChaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.okayestprogrammer.ZombieChaChaChaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = ZombieChaChaCha;
+			};
+			name = Debug;
+		};
+		D721F9CE1DB93C0C000C13A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 88UZ84VZEF;
+				INFOPLIST_FILE = ZombieChaChaChaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.okayestprogrammer.ZombieChaChaChaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = ZombieChaChaCha;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D721F9931DB93C0C000C13A4 /* Build configuration list for PBXProject "ZombieChaChaCha" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D721F9C41DB93C0C000C13A4 /* Debug */,
+				D721F9C51DB93C0C000C13A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D721F9C61DB93C0C000C13A4 /* Build configuration list for PBXNativeTarget "ZombieChaChaCha" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D721F9C71DB93C0C000C13A4 /* Debug */,
+				D721F9C81DB93C0C000C13A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D721F9C91DB93C0C000C13A4 /* Build configuration list for PBXNativeTarget "ZombieChaChaChaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D721F9CA1DB93C0C000C13A4 /* Debug */,
+				D721F9CB1DB93C0C000C13A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D721F9CC1DB93C0C000C13A4 /* Build configuration list for PBXNativeTarget "ZombieChaChaChaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D721F9CD1DB93C0C000C13A4 /* Debug */,
+				D721F9CE1DB93C0C000C13A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D721F9901DB93C0C000C13A4 /* Project object */;
+}
