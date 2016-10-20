@@ -15,6 +15,7 @@
 		D721F9AC1DB93C0C000C13A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D721F9AA1DB93C0C000C13A4 /* LaunchScreen.storyboard */; };
 		D721F9B71DB93C0C000C13A4 /* ZombieChaChaChaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D721F9B61DB93C0C000C13A4 /* ZombieChaChaChaTests.swift */; };
 		D721F9C21DB93C0C000C13A4 /* ZombieChaChaChaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D721F9C11DB93C0C000C13A4 /* ZombieChaChaChaUITests.swift */; };
+		D7521ABC1DB97C530044045D /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7521ABB1DB97C530044045D /* Utilities.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		D721F9BD1DB93C0C000C13A4 /* ZombieChaChaChaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZombieChaChaChaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D721F9C11DB93C0C000C13A4 /* ZombieChaChaChaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZombieChaChaChaUITests.swift; sourceTree = "<group>"; };
 		D721F9C31DB93C0C000C13A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7521ABB1DB97C530044045D /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				D721F9A81DB93C0C000C13A4 /* Assets.xcassets */,
 				D721F9AA1DB93C0C000C13A4 /* LaunchScreen.storyboard */,
 				D721F9AD1DB93C0C000C13A4 /* Info.plist */,
+				D7521ABB1DB97C530044045D /* Utilities.swift */,
 			);
 			path = ZombieChaChaCha;
 			sourceTree = "<group>";
@@ -267,6 +270,7 @@
 			files = (
 				D721F9A21DB93C0C000C13A4 /* GameScene.swift in Sources */,
 				D721F9A41DB93C0C000C13A4 /* GameViewController.swift in Sources */,
+				D7521ABC1DB97C530044045D /* Utilities.swift in Sources */,
 				D721F99C1DB93C0C000C13A4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -520,6 +524,7 @@
 				D721F9C81DB93C0C000C13A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D721F9C91DB93C0C000C13A4 /* Build configuration list for PBXNativeTarget "ZombieChaChaChaTests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +533,7 @@
 				D721F9CB1DB93C0C000C13A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D721F9CC1DB93C0C000C13A4 /* Build configuration list for PBXNativeTarget "ZombieChaChaChaUITests" */ = {
 			isa = XCConfigurationList;
@@ -536,6 +542,7 @@
 				D721F9CE1DB93C0C000C13A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
