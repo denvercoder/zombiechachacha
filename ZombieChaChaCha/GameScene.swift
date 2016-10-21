@@ -18,13 +18,24 @@ class GameScene: SKScene {
     let zombieMovePointsPerSec: CGFloat = 480.0
     var velocity = CGPoint.zero
     let playableRect: CGRect
+    var lastTouchLocation: CGPoint?
     let zombieRotateRadiansPerSec:CGFloat = 4.0 * π
+    let zombieAnimation: SKAction
+    
     
     override init(size: CGSize) {
         let maxAspectRatio: CGFloat = 16.0/9.0
         let playableHeight = size.width / maxAspectRatio
         let playableMargin = (size.height-playableHeight)/2.0
         playableRect = CGRect(x: 0, y: playableMargin, width: size.width, height: playableHeight)
+        var textures:[SKTexture] = []
+        for i in 1...4 {
+            textures.append(SKTexture(imageNamed: "zombie\(i)"))
+        }
+        textures.append(textures[2])
+        textures.append(textures[1])
+        zombieAnimation = SKAction.animate(with: textures,
+                                           timePerFrame: 0.1)
         super.init(size: size)
     }
     
@@ -41,20 +52,34 @@ class GameScene: SKScene {
         zombie.position = CGPoint(x: 400, y: 400)
         addChild(background)
         addChild(zombie)
-        spawnEnemy()
-        debugDrawPlayableArea()
+        run(SKAction.repeatForever(
+            SKAction.sequence([SKAction.run() { [weak self] in
+                self?.spawnEnemy()
+                },
+                               SKAction.wait(forDuration: 2.0)])))
     }
 
     override func update(_ currentTime: TimeInterval) {
+        
         if lastUpdateTime > 0 {
             dt = currentTime - lastUpdateTime
         } else {
             dt = 0
         }
         lastUpdateTime = currentTime
-        move(sprite: zombie, velocity: velocity)
+        
+        if let lastTouchLocation = lastTouchLocation {
+            let diff = lastTouchLocation - zombie.position
+            if diff.length() <= zombieMovePointsPerSec * CGFloat(dt) {
+                zombie.position = lastTouchLocation
+                velocity = CGPoint.zero
+                stopZombieAnimation()
+            } else {
+                move(sprite: zombie, velocity: velocity)
+                rotate(sprite: zombie, direction: velocity)
+            }
+        }
         boundsCheckZombie()
-        rotate(sprite: zombie, direction: velocity)
     }
     
     func move(sprite: SKSpriteNode, velocity: CGPoint) {
@@ -63,12 +88,14 @@ class GameScene: SKScene {
     }
     
     func moveZombieToward(location: CGPoint) {
+        startZombieAnimation()
         let offset = location - zombie.position
         let direction = offset.normalized()
         velocity = direction * zombieMovePointsPerSec
     }
     
     func sceneTouched(touchLocation: CGPoint) {
+        lastTouchLocation = touchLocation
         moveZombieToward(location: touchLocation)
     }
     
@@ -87,6 +114,7 @@ class GameScene: SKScene {
         let touchLocation = touch.location(in: self)
         sceneTouched(touchLocation: touchLocation)
     }
+    
     
     func boundsCheckZombie() {
         let bottomLeft = CGPoint(x: 0, y: playableRect.minY)
@@ -110,16 +138,6 @@ class GameScene: SKScene {
         }
     }
     
-    func debugDrawPlayableArea() {
-        let shape = SKShapeNode()
-        let path = CGMutablePath()
-        path.addRect(playableRect)
-        shape.path = path
-        shape.strokeColor = SKColor.red
-        shape.lineWidth = 4.0
-        addChild(shape)
-    }
-    
     func rotate(sprite: SKSpriteNode, direction: CGPoint) {
         let shortest = shortestAngleBetween(angle1: sprite.zRotation, angle2: velocity.angle)
         let amountToRotate = min(zombieRotateRadiansPerSec * CGFloat(dt), abs(shortest))
@@ -128,13 +146,27 @@ class GameScene: SKScene {
     
     func spawnEnemy() {
         let enemy = SKSpriteNode(imageNamed: "enemy")
-        enemy.position = CGPoint(x: size.width + enemy.size.width/2, y: size.height/2)
+        enemy.position = CGPoint(
+            x: size.width + enemy.size.width/2,
+            y: CGFloat.random(
+                min: playableRect.minY + enemy.size.height/2,
+                max: playableRect.maxY - enemy.size.height/2))
         addChild(enemy)
-        let actionMidMove = SKAction.move(to: CGPoint(x: size.width/2, y: playableRect.minY + enemy.size.height/2), duration: 1.0)
-        let actionMove = SKAction.move(to: CGPoint(x: -enemy.size.width/2, y: enemy.position.y), duration: 1.0)
-        let wait = SKAction.wait(forDuration: 0.25)
-        let sequence = SKAction.sequence([actionMidMove, wait, actionMove])
-        enemy.run(sequence)
-        
+        let actionMove =
+            SKAction.moveTo(x: -enemy.size.width/2, duration: 2.0)
+        let actionRemove = SKAction.removeFromParent()
+        enemy.run(SKAction.sequence([actionMove, actionRemove]))
     }
-}
+    
+    func startZombieAnimation() {
+        if zombie.action(forKey: "animation") == nil {
+            zombie.run(
+                SKAction.repeatForever(zombieAnimation),
+                withKey: "animation")
+        } }
+    func stopZombieAnimation() {
+        zombie.removeAction(forKey: "animation")
+    }
+    
+}//end of class
+
